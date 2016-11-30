@@ -2,7 +2,7 @@ package core
 
 // Employee is a person hired by an organisation, assigned to one of the departments.
 type Employee struct {
-	PersonalID     string
+	ID             string
 	FirstName      string
 	LastName       string
 	Level          int
