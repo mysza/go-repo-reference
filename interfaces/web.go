@@ -22,10 +22,10 @@ type HRManagerWebHandler struct {
 
 // HireRequest is interfaces-only struct used to decode the web request.
 type HireRequest struct {
-	EmployingID       string
-	EmployeeFirstName string
-	EmployeeLastName  string
-	EmployeeLevel     int
+	EmployingID       string `json:"employingID"`
+	EmployeeFirstName string `json:"employeeFirstName"`
+	EmployeeLastName  string `json:"employeeLastName"`
+	EmployeeLevel     int    `json:"employeeLevel"`
 }
 
 // Hire method implements the hire use case for a web interface.
